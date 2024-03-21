@@ -12,74 +12,84 @@ class _StartTriviaState extends State<StartTrivia> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2C2c2c),
+      // backgroundColor: Color(0xFF2C2c2c),
       appBar: AppBar(
         backgroundColor: Color(0xff8eaccd),
         centerTitle: true,
         title: Text('TriviaTime', style: TextStyle(color: Colors.white),),
       ),
-      body: Column(
-          // mainAxisAlignment : MainAxisAlignment.center,
-        children: [
-          Container(
-            height: 50,
-            width: double.maxFinite,
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(10),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Color(0xfff9cccc),
-            ),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('../assets/mountain_vector.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Column(
 
-            child: Text('Select Category', style: TextStyle(color: Colors.black54),),
-          ),
-          Container(
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(20),
-            height: 200,
-            width: double.maxFinite,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Color(0xFFD7E5CA),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text('Question'),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Container(
+            // mainAxisAlignment : MainAxisAlignment.center,
+          children: [
+            Container(
               height: 50,
               width: double.maxFinite,
-            margin: EdgeInsets.symmetric(horizontal: 20),
+              margin: EdgeInsets.all(20),
               padding: EdgeInsets.all(10),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffF9F3CC),
+                color: Color(0xffffffff),
               ),
 
-              child: Text('True', style: TextStyle(color: Colors.black54),),
+              child: Text('Select Category', style: TextStyle(color: Colors.black54),),
             ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            height: 50,
-            width: double.maxFinite,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            padding: EdgeInsets.all(10),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Color(0xffd2e0fb),
+            Container(
+              margin: EdgeInsets.all(20),
+              padding: EdgeInsets.all(20),
+              height: 200,
+              width: double.maxFinite,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                // color: Color(0xFFD7E5CA),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text('Question'),
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Container(
+                height: 50,
+                width: double.maxFinite,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.all(10),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xffF9F3CC),
+                ),
+
+                child: Text('True', style: TextStyle(color: Colors.black54),),
+              ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 50,
+              width: double.maxFinite,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.all(10),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffd2e0fb),
+              ),
+
+              child: Text('False', style: TextStyle(color: Colors.black54),),
             ),
 
-            child: Text('False', style: TextStyle(color: Colors.black54),),
-          ),
-
-        ],
+          ],
+        ),
       ),
     );
   }
