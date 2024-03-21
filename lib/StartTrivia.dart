@@ -14,9 +14,9 @@ class _StartTriviaState extends State<StartTrivia> {
     return Scaffold(
       // backgroundColor: Color(0xFF2C2c2c),
       appBar: AppBar(
-        backgroundColor: Color(0xff8eaccd),
+        backgroundColor: Color(0xff366577),
         centerTitle: true,
-        title: Text('TriviaTime', style: TextStyle(color: Colors.white),),
+        title: Text('TriviaTime', style: TextStyle(color: Colors.white, fontFamily: 'Imprima'),),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -40,7 +40,7 @@ class _StartTriviaState extends State<StartTrivia> {
                 color: Color(0xffffffff),
               ),
 
-              child: Text('Select Category', style: TextStyle(color: Colors.black54),),
+              child: Text('Select Category', style: TextStyle(color: Colors.black54, fontFamily: 'Imprima'),),
             ),
             Container(
               margin: EdgeInsets.all(20),
@@ -53,7 +53,7 @@ class _StartTriviaState extends State<StartTrivia> {
                 // color: Color(0xFFD7E5CA),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text('Question'),
+              child: Text('Question', style: TextStyle(fontFamily: 'Imprima'),),
             ),
             SizedBox(
               height: 5,
@@ -69,7 +69,7 @@ class _StartTriviaState extends State<StartTrivia> {
                   color: Color(0xffF9F3CC),
                 ),
 
-                child: Text('True', style: TextStyle(color: Colors.black54),),
+                child: Text('True', style: TextStyle(color: Colors.black54, fontFamily: 'Imprima'),),
               ),
             SizedBox(
               height: 10,
@@ -85,7 +85,7 @@ class _StartTriviaState extends State<StartTrivia> {
                 color: Color(0xffd2e0fb),
               ),
 
-              child: Text('False', style: TextStyle(color: Colors.black54),),
+              child: Text('False', style: TextStyle(color: Colors.black54, fontFamily: 'Imprima'),),
             ),
 
           ],
